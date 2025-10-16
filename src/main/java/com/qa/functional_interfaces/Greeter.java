@@ -21,12 +21,12 @@ package com.qa.functional_interfaces;
 // Lambdas represent the implementation of a functional interface
 
 // NOTE the use of the @FunctionalInterface annotation
-@FunctionalInterface
-public interface Greeter {
-
-    public abstract void greet(String name);
-
-
-// Uncomment / comment this method signature to see the annotation warning
+//@FunctionalInterface
+//public interface Greeter {
+//
+//    public abstract void greet(String name);
+//
+//
+//// Uncomment / comment this method signature to see the annotation warning
 //    public abstract void sayFarewell(String name);
-}
+//}

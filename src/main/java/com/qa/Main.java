@@ -21,6 +21,8 @@ public class Main {
 //        System.out.println("Increment all values in list by 1: " + lc.incrementListValues(intList));
         List<String> colours = Arrays.asList("Red", "Yellow",  "Pink", "GREEN");
         lc.changeListCases(colours);
+
+        System.out.println(lc.addCalc());
     }
 
     }

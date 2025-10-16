@@ -1,5 +1,7 @@
 package com.qa;
 
+import com.qa.functional_interfaces.Addable;
+
 import java.util.List;
 import java.util.Locale;
 
@@ -37,6 +39,11 @@ public class LambdaChallenges {
 //        to add 2 parameters, x and y
 //        4. Invoke the 'add' method passing in any ints to test the addable functionality
 //        5. Print your results to the console
+
+    public int addCalc() {
+        Addable addCalculator = (x, y) -> x + y;
+        return addCalculator.add(10, 20);
+    }
 
 //  ToDo D
 //        1. Create an Optional<String> called helloOptional with the value of
