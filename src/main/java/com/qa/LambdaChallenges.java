@@ -1,12 +1,19 @@
 package com.qa;
 
+import java.util.List;
+
 public class LambdaChallenges {
 
-// ToDo A
+    // ToDo A
 //        1. Create a list of integers called intList with the values of 1 to 5
 //        2. Print intList
 //        3. Using the replaceAll method and a lambda function, add one to each value
 //        4. Print the modified intList
+
+    public List<Integer> incrementListValues(List<Integer> list) {
+        list.replaceAll(x -> x + 1);
+        return list;
+    }
 
 // ToDo B
 //        1. Create a list of Strings called 'colours' with values of "Red", "Yellow", "Pink", "GREEN"
