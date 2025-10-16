@@ -4,6 +4,8 @@ import com.qa.functional_interfaces.Addable;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.Optional;
+import java.util.function.Predicate;
 
 public class LambdaChallenges {
 
@@ -58,4 +60,18 @@ public class LambdaChallenges {
 //        6. Invoke the 'filter' method of helloOptional passing in the new predicate object and
 //        assign the result to an optional string called 'heyOptional'
 //        7. Print your heyOptional to the console
+
+        public void todoD() {
+            Optional<String> helloOptional = Optional.of("Hello and welcome to Challenge 4");
+            Predicate<String> welcomePredicate = (str -> str.contains("welcome"));
+            Optional<String> welcomeOptional = helloOptional.filter(welcomePredicate);
+            System.out.println("Welcome Optional Result: ");
+            System.out.println(welcomeOptional);
+
+            Predicate<String> heyPredicate = (str -> str.contains("hey"));
+            Optional<String> heyOptional = helloOptional.filter(heyPredicate);
+            System.out.println("Hey Optional Result:");
+            System.out.println(heyOptional);
+        }
+
 }

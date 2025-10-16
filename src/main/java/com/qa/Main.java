@@ -23,6 +23,8 @@ public class Main {
         lc.changeListCases(colours);
 
         System.out.println(lc.addCalc());
+
+        lc.todoD();
     }
 
     }
