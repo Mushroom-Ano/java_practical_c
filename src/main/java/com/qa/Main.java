@@ -16,9 +16,11 @@ public class Main {
 //        exampleD();
 //        exampleE();
 
-        List<Integer> intList = Arrays.asList(1, 2, 3, 4, 5);
         LambdaChallenges lc = new LambdaChallenges();
-        System.out.println("Increment all values in list by 1: " + lc.incrementListValues(intList));
+//        List<Integer> intList = Arrays.asList(1, 2, 3, 4, 5);
+//        System.out.println("Increment all values in list by 1: " + lc.incrementListValues(intList));
+        List<String> colours = Arrays.asList("Red", "Yellow",  "Pink", "GREEN");
+        lc.changeListCases(colours);
     }
 
     }

@@ -1,6 +1,7 @@
 package com.qa;
 
 import java.util.List;
+import java.util.Locale;
 
 public class LambdaChallenges {
 
@@ -22,6 +23,12 @@ public class LambdaChallenges {
 //        4. Print the modified 'colours' list
 //        5. Using the replaceAll method and a lambda function, convert the strings to UPPERCASE
 //        6. Print the modified 'colours' list
+    public void changeListCases(List<String> list) {
+        list.replaceAll(str -> str.toUpperCase());
+        System.out.println(list);
+        list.replaceAll(str -> str.toLowerCase());
+        System.out.println(list);
+    }
 
 // ToDo C
 //        1. Create a Functional Interface called 'Addable'
